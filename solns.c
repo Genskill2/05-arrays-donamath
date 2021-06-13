@@ -34,3 +34,22 @@ float average(int A[], int n)
   }
   return sum/n;
 }
+
+
+int mode(int A[], int n);
+{
+  int mode=A[0],count=0,count1=0;
+  for(i=0;i<n;i++){
+    for(j=i;j<n;j++){
+      if(A[i]==A[j]){
+        count1++;
+      }
+    }
+    if(count1>count)
+    {
+      count=count1;
+      mode=A[i];
+    }
+  }
+  return mode;
+}
