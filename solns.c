@@ -53,3 +53,31 @@ int mode(int A[], int n)
   }
   return mode;
 }
+
+
+int factors(int n, int A[])
+{
+  int i=0,j;
+  while(n%2==0)
+  {
+    A[i]=2;
+    i++;
+    n=n/2;
+  }
+  for(j=3;j<sqrt(n);j+=2)
+  {
+    while(n%j==0)
+    {
+      A[i]=2;
+      i++; 
+      n=n/j;
+    }
+  }
+  if(n>2)
+  {
+    A[i]=2;
+    i++; 
+  }
+  return A[];
+}
+  
