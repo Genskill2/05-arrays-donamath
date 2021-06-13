@@ -1,5 +1,6 @@
 /* Enter your solutions in this file */
 #include <stdio.h>
+#include<math.h>
 
 int max(int A[], int n)
 {
