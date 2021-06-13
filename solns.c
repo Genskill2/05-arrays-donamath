@@ -23,3 +23,14 @@ int min(int A[], int n)
   }
   return small;
 }
+
+
+float average(int A[], int n)
+{
+  int sum=0,i;
+  for(i=0;i<n;i++)
+  {
+   sum+=A[i];
+  }
+  return sum/n;
+}
