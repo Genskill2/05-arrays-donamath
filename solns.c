@@ -11,3 +11,15 @@ int max(int A[], int n)
   }
   return large;
 }
+
+
+int min(int A[], int n)
+{
+  int small=A[0],i;
+  for(i=0;i<n;i++)
+  {
+    if(A[i]<small)
+      small=A[i];
+  }
+  return small;
+}
