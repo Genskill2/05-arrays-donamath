@@ -38,7 +38,7 @@ float average(int A[], int n)
 
 int mode(int A[], int n)
 {
-  int mode=A[0],count=0,count1=0;
+  int mode=A[0],count=0,count1=0,i,j;
   for(i=0;i<n;i++){
     for(j=i;j<n;j++){
       if(A[i]==A[j]){
