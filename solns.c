@@ -79,6 +79,6 @@ int factors(int n, int A[])
     A[i]=2;
     i++; 
   }
-  return sizeof(A);
+  return i;
 }
   
