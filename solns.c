@@ -56,7 +56,7 @@ int mode(int A[], int n)
 }
 
 
-int * factors(int n, int A[])
+int factors(int n, int A[])
 {
   int i=0,j;
   while(n%2==0)
@@ -79,6 +79,6 @@ int * factors(int n, int A[])
     A[i]=2;
     i++; 
   }
-  return A;
+  return len(A);
 }
   
