@@ -69,7 +69,7 @@ int factors(int n, int A[])
   {
     while(n%j==0)
     {
-      A[i]=2;
+      A[i]=j;
       i++; 
       n=n/j;
     }
