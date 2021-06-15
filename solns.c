@@ -58,12 +58,13 @@ int mode(int A[], int n)
 
 int factors(int n, int A[])
 {
-  int i=0,j;
+  int i=0,j,c=0;
   while(n%2==0)
   {
     A[i]=2;
     i++;
     n=n/2;
+    c++;
   }
   for(j=3;j<sqrt(n);j+=2)
   {
@@ -72,13 +73,16 @@ int factors(int n, int A[])
       A[i]=j;
       i++; 
       n=n/j;
+      c++;
     }
   }
   if(n>2)
   {
     A[i]=2;
-    i++; 
+    i++;
+    n=n/2;
+    c++;
   }
-  return i;
+  return c;
 }
   
